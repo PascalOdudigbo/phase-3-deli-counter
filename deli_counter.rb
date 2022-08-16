@@ -11,15 +11,15 @@ def line(customers_array)
             line_string += " #{customer_index +=1}. #{name}"
         end
         puts line_string
-    end
-       
-        
+    end      
 end
+
 
 def take_a_number(customers_array, customer_name)
     customers_array << customer_name
     puts "Welcome, #{customer_name}. You are number #{customers_array.find_index(customer_name)+1} in line."
 end
+
 
 def now_serving(customers_array)
     if customers_array.size == 0
